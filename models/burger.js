@@ -1,6 +1,12 @@
 var orm = require("../config/orm.js");
 
-var burger = {};
+var burger = {
+    selectAll: function(cb) {
+              orm.selectAll("burgers", function(res) {
+                cb(res);
+              });
+            }
+};
 
 // var cat = {
 //     all: function(cb) {
@@ -24,4 +30,4 @@ var burger = {};
 //     }
 //   };
 
-module.exports = burgers;
+module.exports = burger;
