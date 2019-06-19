@@ -6,9 +6,10 @@ var connection;
 // } else {
   connection = mysql.createConnection({
     host: "alv4v3hlsipxnujn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    port: 3306,
     user: "vo9iogfs0fik3t6w",
     password: "bn5i68jtg9y38mnm",
-    database: "burgers_db"
+    database: "o935s3w4he5ojtwr"
   });
 // }
 
